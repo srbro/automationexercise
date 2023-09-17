@@ -1,0 +1,19 @@
+{
+  "name": "automationexercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srbro/automationexercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srbro/automationexercise/issues"
+  },
+  "homepage": "https://github.com/srbro/automationexercise#readme"
+}

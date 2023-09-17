@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es5", "dom"],
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es5",
+    "types": ["cypress", "node"],
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["**/*.ts"]
+}

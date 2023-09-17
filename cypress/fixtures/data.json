@@ -1,0 +1,19 @@
+{
+  "homeUrl": "https://automationexercise.com/",
+  "contactUsPage": {
+    "url": "https://automationexercise.com/contact_us",
+    "submitSuccessMsg": "Success! Your details have been submitted successfully."
+  },
+  "testCasesPage": {
+    "url": "https://automationexercise.com/test_cases"
+  },
+  "productsPage": {
+    "url": "https://automationexercise.com/products"
+  },
+  "productDetailsPage": {
+    "url": "https://automationexercise.com/product_details/"
+  },
+  "footer": {
+    "subscriptionSuccessMsg": "You have been successfully subscribed!"
+  }
+}
