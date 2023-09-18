@@ -4,14 +4,14 @@
 
 import { contactUsPage } from "../fixtures/data.json";
 import { getContactUsButton } from "../Selectors/header";
-import { verifyHomePage } from "../Selectors/homePage";
+import { verifyHomePage } from "../Classes/homePage";
 import {
   getGetInTouchTitle,
-  getInputField,
   getUploadFileButton,
   getSuccessMsg,
   getHomeButtonSuccess,
 } from "../Selectors/contactUsPage";
+import { getInputField } from "../Classes/contactUsPage";
 
 describe("Test Contact us form", () => {
   before(() => {
@@ -34,7 +34,7 @@ describe("Test Contact us form", () => {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
     );
     // Upload a file
-    getUploadFileButton().selectFile("cypress/fixtures/example.json");
+    getUploadFileButton().selectFile("cypress/fixtures/example.json"); // getUploadFileButton() is getting the Input element. Click on a button is impossible, since it's not visible in DOM.
     getInputField("submit-button").click();
     // Verify the Success message alert
     getSuccessMsg()

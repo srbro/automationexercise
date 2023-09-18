@@ -3,7 +3,7 @@
  */
 
 import { footer } from "../fixtures/data.json";
-import { verifyHomePage } from "../Selectors/homePage";
+import { verifyHomePage } from "../Classes/homePage";
 import {
   getSubscriptionTitle,
   getEmailInputField,

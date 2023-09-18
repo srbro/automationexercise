@@ -1,5 +1,3 @@
-import { homeUrl } from "../fixtures/data.json";
-
 /**
  * @file Helper functions for getting elements on Home page
  */
@@ -29,15 +27,4 @@ export const getLeftSideBar = () => {
  */
 export const getRecommendedItems = () => {
   return cy.get("div .recommended_items");
-};
-
-/**
- * Verify several sections on Home Page
- *
- */
-export const verifyHomePage = () => {
-  cy.url().should("eql", homeUrl);
-  getSliderSection().should("be.visible");
-  getLeftSideBar().should("be.visible");
-  getRecommendedItems().should("be.visible");
 };

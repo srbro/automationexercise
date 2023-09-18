@@ -3,7 +3,7 @@
  */
 
 import { testCasesPage } from "../fixtures/data.json";
-import { verifyHomePage } from "../Selectors/homePage";
+import { verifyHomePage } from "../Classes/homePage";
 import { getTestCasesButton } from "../Selectors/header";
 import { getTestCasesTitle } from "../Selectors/testCasesPage";
 

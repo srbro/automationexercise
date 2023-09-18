@@ -3,7 +3,7 @@
  */
 
 import { productsPage, productDetailsPage } from "../fixtures/data.json";
-import { verifyHomePage } from "../Selectors/homePage";
+import { verifyHomePage } from "../Classes/homePage";
 import { getProductsButton } from "../Selectors/header";
 import {
   getAllProductsTitle,
