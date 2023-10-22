@@ -12,21 +12,26 @@ describe("Test Contact us form", () => {
     // Go to the landing page and verify it's a home page
     cy.visit("/");
     verifyHomePage();
-    // Go to the Test Cases page
-    getTestCasesButton().click();
   });
 
-  it("Verify url, title and the list of test cases", () => {
+  beforeEach(() => {
+    // Go to the Test Cases page and verify the url
+    cy.visit("/");
+    getTestCasesButton().click();
     cy.url().should("eql", testCasesPage.url);
+  });
+
+  it("Verify the page title", () => {
     getTestCasesTitle().should("be.visible");
-    cy.get("u")
+  });
+
+  it("Verify the list of test cases", () => {
     cy.get("u").each((item, i) => {
       const text = item.html();
-      // cy.wrap(item).contains("Test Case")
       if (text.includes("Test Case")) {
         expect(text).contain("Test Case " + (i + 1));
       }
-      console.log("item: ", item.html());
+      // console.log("item: ", item.html());
     });
   });
 });
